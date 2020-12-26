@@ -15,6 +15,4 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findAllByPriceLessThan(int max);
 
     Optional<Product> findById(Long id);
-
-    void deleteById(Long id);
 }
